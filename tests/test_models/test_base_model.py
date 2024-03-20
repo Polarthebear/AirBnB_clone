@@ -6,10 +6,9 @@ which this module shouldnt be expected to fail, and cases
 on which is expected to fail.
 
 """
-
-import unittest
-from datetime import timedelta
 from models.base_model import BaseModel
+from datetime import timedelta
+import unittest
 
 class TestBaseModel(unittest.TestCase):
     """
