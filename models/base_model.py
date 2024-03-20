@@ -3,8 +3,9 @@
     Script that implements the BAseModel class.
 """
 
-import uuid
 from datetime import datetime
+import models
+import uuid
 
 class BaseModel:
     """
