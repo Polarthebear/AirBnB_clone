@@ -7,8 +7,9 @@ on which is expected to fail.
 
 """
 from models.base_model import BaseModel
-from datetime import timedelta
+from datetime import timedelta, timedate
 import unittest
+import uuid
 
 class TestBaseModel(unittest.TestCase):
     """
@@ -53,7 +54,7 @@ class TestBaseModel(unittest.TestCase):
     def test_str(self):
         model = BaseModel()
         model_str = str(model)
-        self.assertIsInInstance(model_str, str)
+        self.assertIsInstance(model_str, str)
         self.assertgreater(len(model_str), 0)
         self.assertIn('[', model_str)
         self.assertIn(']', model_str)
